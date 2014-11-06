@@ -1,1 +1,1 @@
-include ':app', ':material-dialogs', ':libsuperuser'
+include ':app', ':libsuperuser', ':material-dialogs'
