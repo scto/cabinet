@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.0"
+
+    defaultConfig {
+        applicationId "com.afollestad.cabinet"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 86
+        versionName "1.8.4"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        production {
+            keyAlias 'afollestad'
+            keyPassword 'aidan1995'
+            storeFile file('../keystore')
+            storePassword 'aidan1995'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.0'
+    compile 'com.android.support:support-v13:21.0.0'
+    compile 'com.android.support:recyclerview-v7:21.0.0'
+    compile 'com.melnykov:floatingactionbutton:+'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:+'
+    compile 'com.jcraft:jsch:0.1.51'
+    compile 'com.anjlab.android.iab.v3:library:1.0.+@aar'
+    compile project(':libsuperuser')
+    compile project(':material-dialogs')
+}
