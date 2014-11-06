@@ -173,4 +173,8 @@
     <string name="true_black">Negre pur</string>
     <string name="true_black_description">Cabinet utilitzarà negre pur per a les pantalles AMOLED.</string>
     <string name="sdcard">Targeta SD</string>
+    <string name="grid_mode">Grid mode</string>
+    <string name="owner">Owner</string>
+    <string name="group">Group</string>
+    <string name="applying_permissions">Applying permissions…</string>
 </resources>

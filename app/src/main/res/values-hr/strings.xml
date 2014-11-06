@@ -173,4 +173,8 @@
     <string name="true_black">Prava Crna</string>
     <string name="true_black_description">Cabinet će koristiti pravu crnu boju za AMOLED zaslone.</string>
     <string name="sdcard">SD Kartica</string>
+    <string name="grid_mode">Grid mode</string>
+    <string name="owner">Owner</string>
+    <string name="group">Group</string>
+    <string name="applying_permissions">Applying permissions…</string>
 </resources>

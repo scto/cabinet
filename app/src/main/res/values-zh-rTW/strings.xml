@@ -174,4 +174,8 @@
     <string name="true_black">真黑</string>
     <string name="true_black_description">內閣將採用純黑色的AMOLED顯示屏。</string>
     <string name="sdcard">SD卡</string>
+    <string name="grid_mode">Grid mode</string>
+    <string name="owner">Owner</string>
+    <string name="group">Group</string>
+    <string name="applying_permissions">Applying permissions…</string>
 </resources>

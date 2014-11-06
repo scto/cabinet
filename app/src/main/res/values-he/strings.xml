@@ -173,4 +173,8 @@
     <string name="true_black">שחור אמיתי</string>
     <string name="true_black_description">קבינט ישתמש שחור טהור עבור צגי AMOLED.</string>
     <string name="sdcard">כרטיס SD</string>
+    <string name="grid_mode">Grid mode</string>
+    <string name="owner">Owner</string>
+    <string name="group">Group</string>
+    <string name="applying_permissions">Applying permissions…</string>
 </resources>

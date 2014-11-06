@@ -173,4 +173,8 @@
     <string name="true_black">Справжній чорний</string>
     <string name="true_black_description">Cabinet буде використовувати чисто чорний для AMOLED дисплеїв.</string>
     <string name="sdcard">SD Карта</string>
+    <string name="grid_mode">Grid mode</string>
+    <string name="owner">Owner</string>
+    <string name="group">Group</string>
+    <string name="applying_permissions">Applying permissions…</string>
 </resources>

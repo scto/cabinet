@@ -176,4 +176,5 @@ Android4.1以降向けのミニマリスト、直感的かつ美しいファイ�
     <string name="owner">オーナー</string>
     <string name="group">グループ</string>
     <string name="applying_permissions">パーミッションを適用中…</string>
+    <string name="grid_mode">Grid mode</string>
 </resources>
