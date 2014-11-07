@@ -277,6 +277,7 @@ public class TextEditor extends NetworkedActivity implements TextWatcher {
                     })
                     .build().show();
         }
+        else { finish(); }
     }
 
     @Override
