@@ -7,9 +7,9 @@ android {
     signingConfigs {
         production {
             keyAlias 'afollestad'
-            keyPassword 'password'
+            keyPassword 'aidan1995'
             storeFile file('../keystore')
-            storePassword 'password'
+            storePassword 'aidan1995'
         }
     }
 
