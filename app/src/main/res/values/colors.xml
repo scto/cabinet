@@ -17,7 +17,7 @@
     <color name="search_view_hint">#BBFFFFFF</color>
 
     <color name="button_disabled">#ddd</color>
-    <color name="button_disabled_dark">#414141</color>
+    <color name="button_disabled_dark">#303030</color>
     <color name="dark_background">#242424</color>
 
     <color name="empty_text">#C7C7C7</color>

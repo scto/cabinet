@@ -4,6 +4,15 @@ android {
     compileSdkVersion 21
     buildToolsVersion "21.1.0"
 
+    signingConfigs {
+        production {
+            keyAlias 'afollestad'
+            keyPassword 'password'
+            storeFile file('../keystore')
+            storePassword 'password'
+        }
+    }
+
     defaultConfig {
         applicationId "com.afollestad.cabinet"
         minSdkVersion 14
@@ -12,20 +21,15 @@ android {
         versionName "1.8.4.2"
     }
     buildTypes {
+        debug {
+            signingConfig signingConfigs.production
+        }
         release {
+            signingConfig signingConfigs.production
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    signingConfigs {
-        production {
-            keyAlias 'afollestad'
-            keyPassword 'aidan1995'
-            storeFile file('../keystore')
-            storePassword 'aidan1995'
-        }
-    }
-
 }
 
 dependencies {
