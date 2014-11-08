@@ -82,7 +82,7 @@ public class Unzipper {
                             break;
                         }
                     }
-                    if (context.getActivity() == null) return;
+                    if (context.getActivity() == null || mDialog == null) return;
                     context.getActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {

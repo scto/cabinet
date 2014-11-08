@@ -8,8 +8,8 @@ android {
         applicationId "com.afollestad.cabinet"
         minSdkVersion 14
         targetSdkVersion 21
-        versionCode 87
-        versionName "1.8.4.1"
+        versionCode 88
+        versionName "1.8.4.2"
     }
     buildTypes {
         release {

@@ -6,7 +6,6 @@ import com.afollestad.cabinet.utils.APKIconDownloader;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
-import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
 
 /**
  * @author Aidan Follestad (afollestad)
@@ -28,7 +27,6 @@ public class App extends Application {
         return new DisplayImageOptions.Builder()
                 .resetViewBeforeLoading(true)
                 .showImageOnLoading(fallback)                                   // set the default image while loading the thumb
-                .displayer(new RoundedBitmapDisplayer(20))                      // rounds the corners of the thumb to match the style of the other icons
                 .showImageForEmptyUri(fallback)
                 .showImageOnFail(fallback)
                 .cacheInMemory(true)
