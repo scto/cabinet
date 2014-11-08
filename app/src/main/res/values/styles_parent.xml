@@ -66,7 +66,7 @@
         <item name="colorPrimaryDark">@color/cabinet_color_darker</item>
         <item name="colorAccent">@color/cabinet_accent_color</item>
 
-        <item name="android:buttonStyle">@style/ButtonCabinet</item>
+        <item name="android:buttonStyle">@style/ButtonCabinetDark</item>
 
         <item name="ic_file_apk">@drawable/ic_file_apk_light</item>
         <item name="ic_file_audio">@drawable/ic_file_audio_light</item>
