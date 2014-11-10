@@ -171,12 +171,19 @@ public class DetailsDialog extends DialogFragment implements CompoundButton.OnCh
     private void invalidatePermissions(boolean reload) {
         if (reload) {
             try {
-                final List<String> results = RootFile.runAsRoot(getActivity(), "ls -l \"" + file.getPath() + "\"", file.getParent());
+                List<String> results = RootFile.runAsRoot(getActivity(), "ls -l \"" + file.getPath() + "\"", file.getParent());
+
+                if (results.isEmpty()) {
+                    String path = file.getPath().replace("/0/", "/legacy/");
+                    results = RootFile.runAsRoot(getActivity(), "ls -l \"" + path + "\"", file.getParent());
+                }
+
                 if (results.size() > 0 && getActivity() != null) {
+                    final List<String> finalResults = results;
                     getActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            permissionsString = Perm.parse(results.get(0), DetailsDialog.this);
+                            permissionsString = Perm.parse(finalResults.get(0), DetailsDialog.this);
                             initialPermission = permissionsString;
                         }
                     });
