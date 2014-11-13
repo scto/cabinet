@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'versionPlugin'
 
 android {
     compileSdkVersion 21
@@ -41,6 +42,12 @@ dependencies {
     compile 'com.nostra13.universalimageloader:universal-image-loader:+'
     compile 'com.jcraft:jsch:0.1.51'
     compile 'com.anjlab.android.iab.v3:library:1.0.+@aar'
-    compile 'com.afollestad:material-dialogs:0.0.3'
+    compile 'com.afollestad:material-dialogs:0.0.+'
     compile project(':libsuperuser')
+}
+
+versionPlugin{
+    buildTypesMatcher = 'release'
+    supportBuildNumber = false
+    fileNameFormat = '$appPkg-v$versionName-$versionCode'
 }
