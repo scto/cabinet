@@ -178,6 +178,7 @@ public class DrawerActivity extends NetworkedActivity implements BillingProcesso
         pickMode = intent.getAction() != null && intent.getAction().equals(Intent.ACTION_GET_CONTENT);
         if (pickMode) {
             setCab(new PickerCab().setContext(this).start());
+            switchDirectory(null, true);
         } else if (getRemoteSwitch() == null && savedInstanceState == null) {
             if (!PreferenceManager.getDefaultSharedPreferences(this).getBoolean("shown_welcome", false)) {
                 getFragmentManager().beginTransaction().replace(R.id.container, new WelcomeFragment()).commit();
