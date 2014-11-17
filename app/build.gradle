@@ -27,8 +27,6 @@ android {
         }
         release {
             signingConfig signingConfigs.production
-            runProguard false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
@@ -42,7 +40,7 @@ dependencies {
     compile 'com.nostra13.universalimageloader:universal-image-loader:+'
     compile 'com.jcraft:jsch:0.1.51'
     compile 'com.anjlab.android.iab.v3:library:1.0.+@aar'
-    compile 'com.afollestad:material-dialogs:0.0.+'
+    compile 'com.afollestad:material-dialogs:0.0.9’
     compile project(':libsuperuser')
 }
 
